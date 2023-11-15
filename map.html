@@ -1,37 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>My Map</title>
-    <meta name="viewport" content="initial-scale=1.0">
-    <meta charset="utf-8">
-	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet"> 
-	<link rel="stylesheet" href="normalize.css">
-	<script src="js/map.js"></script>
-	<script src="https://maps.googleapis.com/maps/api/js?AIzaSyALXxo3TPmbHKubN73UB6w4EihJAOS9j6c&callback=initMap" async defer></script>
-    <style>
-  #map {
-    height: 100%;
-  }
-  html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-  }
-</style>
-  </head>
-  <body>
-  <header>
-   <link rel="stylesheet" type="text/css" href="styles.css">
+<head>
+  <title>My Map</title>
+  <meta name="viewport" content="initial-scale=1.0">
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="js/map.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?AIzaSyALXxo3TPmbHKubN73UB6w4EihJAOS9j6c&callback=initMap" async defer></script>
+  <style>
+    #map {
+      height: 400px; /* Set a specific height for your map container */
+    }
+
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1em;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: center;
+      background-color: #555;
+      padding: 0.5em;
+    }
+
+    .nav-button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <div class="navbar">
-      <button class="nav-button"><a href="index.html">Resume</a></button>
-      <button class="nav-button"><a href="survey.html">Survey</a></button>
-      <button class="nav-button"><a href="quotes.html">Quotes</a></button>
-      <button class="nav-button"><a href="map.html">Map</a></button>
-    </div>
+    <h1>Your Map Page</h1>
   </header>
-    <div id="map"></div>
-  </body>
+
+  <div class="navbar">
+    <button class="nav-button"><a href="index.html">Resume</a></button>
+    <button class="nav-button"><a href="survey.html">Survey</a></button>
+    <button class="nav-button"><a href="quotes.html">Quotes</a></button>
+    <button class="nav-button"><a href="map.html">Map</a></button>
+  </div>
+
+  <div id="map"></div>
+
+</body>
 </html>

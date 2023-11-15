@@ -1,0 +1,92 @@
+body {
+  font-family: "Times New Roman", Times, serif;
+  background-color: antiquewhite;
+  color: black;
+  text-align: left;
+  font-size: 1rem;
+  line-height: 1.6;
+  padding: 1rem;
+}
+
+.navbar {
+  background-color: #333;
+  text-align: center;
+  padding: 1rem 0;
+  overflow: auto;
+}
+
+.nav-button {
+  float: left;
+  margin-right: 1rem;
+}
+
+.nav-button a {
+  background-color: transparent;
+  border: none;
+  padding: 0.625rem 1.25rem;
+  margin: 0 0.625rem;
+  color: lightblue;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.nav-button:hover a {
+  background-color: #444;
+  font-size: 1.125rem;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  overflow: auto;
+}
+
+li {
+  padding-left: 1.25rem;
+  float: left;
+  margin-right: 0.625rem;
+}
+
+h1, h2, p, ul, li {
+  text-align: left;
+}
+
+header {
+  position: relative;
+  background-color: #f1f1f1;
+  padding: 1.25rem;
+}
+
+section {
+  position: relative;
+  margin: 1.25rem 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 75rem;
+  margin: 0 auto;
+  position: relative;
+}
+
+h1, h2 {
+  font-size: 2rem;
+  position: relative;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 0.625rem 0;
+}

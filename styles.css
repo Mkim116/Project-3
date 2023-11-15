@@ -1,9 +1,10 @@
-body{
-	background-color: #256D85;
-	font-family: 'Ubuntu', sans-serif;
-	font-size: 1.1em;
-	letter-spacing: -0.005em;
-	}
+body {
+  background-color: #256D85;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.1em;
+  letter-spacing: -0.005em;
+  margin: 0; /* Add this line to remove default body margin */
+}
 
 header {
   background-color: #06283D;
@@ -15,7 +16,7 @@ header {
   padding: 0px;
   margin: 0px;
   position: relative;
-  display: inline-block
+  display: inline-block;
 }
 
 #main-navbar ul li {
@@ -43,58 +44,58 @@ header {
 }
 
 h1 {
-	text-align: center;
-	background-color: #2B819E;
+  text-align: center;
+  background-color: #2B819E;
 }
 
 h4 {
-	text-align: center;
-	background-color: #47B5FF;
-	margin: auto;
-	padding: 5px;
+  text-align: center;
+  background-color: #47B5FF;
+  margin: auto;
+  padding: 5px;
 }
 
-h2{
-	background-color: #6E7373;
-    font-size: 1.0em;
-	text-align: center;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-	padding: 5px;
+h2 {
+  background-color: #6E7373;
+  font-size: 1.0em;
+  text-align: center;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  padding: 5px;
 }
 
 h3 {
-    background-color: #FFDBB5;
-	padding: 2px;
+  background-color: #FFDBB5;
+  padding: 2px;
 }
 
-#map{
-	position: absolute;
-	width: 50%;
-	height: 40%;
-	right: 20%;
-	top: 6%;
-	margin-top: 10px;
-	border: solid red 5px;
-	border-radius: 10px;
+#map {
+  position: relative; /* Change from absolute to relative */
+  width: 50%;
+  height: 40%;
+  margin: 10px auto; /* Center the map horizontally with auto margins */
+  border: solid red 5px;
+  border-radius: 10px;
 }
-@media screen and (min-width: 600px){
-  #summary{
+
+@media screen and (min-width: 600px) {
+  #summary {
     padding: 0;
     margin-right: auto;
     margin-left: auto;
     list-style: none;
     text-align: center;
-    }
+  }
 }
-	 
-@media screen and (min-width: 600px){
-  .sporting{
+
+@media screen and (min-width: 600px) {
+  .sporting {
     padding: 0;
     margin-right: auto;
     margin-left: auto;
     list-style: none;
     text-align: center;
-    }
+  }
+}

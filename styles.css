@@ -1,101 +1,101 @@
 body {
-  background-color: #256D85;
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 1.1em;
-  letter-spacing: -0.005em;
-  margin: 0; /* Add this line to remove default body margin */
+  font-family: "Times New Roman", Times, serif;
+  background-color: antiquewhite;
+  color: black;
+  text-align: left;
+  font-size: 1rem;
+  line-height: 1.6;
+  padding: 1rem;
 }
 
-header {
-  background-color: #06283D;
-  position: relative;
+.navbar {
+  background-color: #333;
+  text-align: center;
+  padding: 1rem 0;
+  overflow: auto;
 }
 
-#main-navbar ul {
-  list-style-type: none;
-  padding: 0px;
-  margin: 0px;
-  position: relative;
+.nav-button {
+  float: left;
+  margin-right: 1rem;
+}
+
+.nav-button a {
+  background-color: transparent;
+  border: none;
+  padding: 0.625rem 1.25rem;
+  margin: 0 0.625rem;
+  color: lightblue;
+  text-decoration: none;
+  font-weight: bold;
   display: inline-block;
 }
 
-#main-navbar ul li {
+.nav-button:hover a {
+  background-color: #444;
+  font-size: 1.125rem;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  overflow: auto;
+}
+
+li {
+  padding-left: 1.25rem;
   float: left;
+  margin-right: 0.625rem;
+}
+
+h1, h2, p, ul, li {
+  text-align: left;
+}
+
+header {
   position: relative;
+  background-color: #f1f1f1;
+  padding: 1.25rem;
 }
 
-#main-navbar ul li a {
-  display: block;
-  padding: 10px 60px;
-  color: #47B5FF;
-  text-align: center;
-  text-decoration: Highlight;
-  font-weight: bold;
+section {
+  position: relative;
+  margin: 1.25rem 0;
 }
 
-#main-navbar ul li a:hover {
-  background-color: #EBB813;
-}
-
-#navbar-container {
+.container {
   width: 100%;
+  max-width: 75rem;
+  margin: 0 auto;
   position: relative;
+}
+
+h1, h2 {
+  font-size: 2rem;
+  position: relative;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f1f1f1;
   text-align: center;
+  padding: 0.625rem 0;
 }
-
-h1 {
-  text-align: center;
-  background-color: #2B819E;
-}
-
-h4 {
-  text-align: center;
-  background-color: #47B5FF;
-  margin: auto;
-  padding: 5px;
-}
-
-h2 {
-  background-color: #6E7373;
-  font-size: 1.0em;
-  text-align: center;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  padding: 5px;
-}
-
-h3 {
-  background-color: #FFDBB5;
-  padding: 2px;
-}
-
 #map {
-  position: relative; /* Change from absolute to relative */
+  position: relative;
+  top: 30px;
   width: 50%;
   height: 40%;
-  margin: 10px auto; /* Center the map horizontally with auto margins */
+  margin: 10px auto; 
   border: solid red 5px;
   border-radius: 10px;
-}
-
-@media screen and (min-width: 600px) {
-  #summary {
-    padding: 0;
-    margin-right: auto;
-    margin-left: auto;
-    list-style: none;
-    text-align: center;
-  }
-}
-
-@media screen and (min-width: 600px) {
-  .sporting {
-    padding: 0;
-    margin-right: auto;
-    margin-left: auto;
-    list-style: none;
-    text-align: center;
-  }
 }
